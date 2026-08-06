@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Admin panel</title>
+   <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+   <div class="wrapper">
+    <h1 class="header-title">Lampulan Ringette ry ADMIN PANEL</h1>
+    <header>
+      <h2 class="calendar-list-title">Kalenteri tapahtumat</h2>
+      <button class="open-dialog button-wrapper add-event"  data-content="add">Lisää kalenteri tapahtuma</button>
+    </header>
+
+    <div class="calendar-list" id="calendar-list">
+      Ladataan...
+    </div>
+
+   </div>
+
+   <div class="dialog-wrapper" style="display: none;" id="dialog">
+    
+   </div>
+  </body>
+
+  <script type="module" src="index.js"></script>
+  <script type="module" src="data.js"></script>
+</html>

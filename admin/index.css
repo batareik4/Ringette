@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button, h2, h1 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.wrapper {
+  max-width: 1500px;  
+  margin: 50px auto;
+}
+
+header {
+  margin: 100px 0 0 0;  
+  height: 50px;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+   padding: 0 0 20px; 
+   border-bottom: solid 1px #000; 
+}
+
+.calendar-list {
+  margin: 25px 0 0 0;  
+  gap: 15px;
+  display: grid;
+}
+
+.calendar-itm {
+   height: 80px; 
+   border-top: solid 1px #000; 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.calendar-itm-left {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.calendar-itm-right {
+    gap: 10px;
+    display: flex;
+}
+
+.calendar-itm-img {
+    width: 100px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.button-wrapper {
+   padding: 10px 18px; 
+   border-radius: 4px;
+   cursor: pointer;
+   background: #999999;
+}
+
+.add-event {
+    background-color: #09cad3;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.dialog-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #000000a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  width: 400px;
+  /*height: 400px;*/
+  padding: 24px;
+  border-radius: 16px;
+  background: #fff;  
+}
+
+.dialog-btn {
+    margin: 20px 0 0 0;
+    padding: 13px 0;
+    width: 100%;
+    background: #41a521;
+    color: #fff;
+}
+
+.dialog-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-delete {
+  background: #af2424;
+  color: #fff;
+}
+
+
+.column {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-when-end {
+    margin: 20px 0 0 0;
+}
+
+.dialog-inputs-list {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grey-bg {
+  background: #999999;
+}
+
+.required-dot {
+  color: #af2424;
+}
