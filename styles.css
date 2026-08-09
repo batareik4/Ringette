@@ -83,9 +83,6 @@ footer {
     background-color: #002D6B;
 }
 
-footer > h2 {
-    margin-bottom: 1em;
-}
 
 footer > p {
     margin-left: 5px;
@@ -99,6 +96,7 @@ body {
 
 .title {
     padding: 20px 20px;
+    text-align: center;
     color: #022F74;
 }
 
@@ -187,3 +185,253 @@ body {
         max-width: 350px;
     }
 }
+
+html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        color: #123b63;
+
+        line-height: 1.6;
+    }
+
+    /* Yläpalkki */
+
+    header {
+        background: #07579e;
+        color: white;
+        padding: 20px 6%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #a9edff;
+    }
+
+    /* Etusivu */
+
+    .hero {
+        min-height: 600px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        color: white;
+
+         background: linear-gradient(135deg, #eaf4fb, #07579e);
+    }
+
+    .hero-content {
+        max-width: 800px;
+        padding: 30px;
+    }
+
+
+
+    .hero h1 {
+        font-size: 60px;
+        margin: 15px 0;
+    }
+
+    .hero-text {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 14px 28px;
+
+        background: white;
+        color: #07579e;
+
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Yleiset osiot */
+
+    .section {
+        max-width: 1100px;
+        margin: auto;
+        padding: 80px 25px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #07579e;
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .intro {
+        max-width: 750px;
+        margin: 0 auto 40px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* Kortit */
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 35px;
+        text-align: center;
+        border-radius: 20px;
+
+        box-shadow: 0 5px 20px rgba(0, 70, 120, 0.15);
+    }
+
+    .card .icon {
+        font-size: 45px;
+    }
+
+    .card h3 {
+        color: #07579e;
+        margin: 15px 0;
+    }
+
+    /* Joukkueet */
+
+    .teams {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 850px;
+        margin: auto;
+    }
+
+    .team {
+        background: white;
+        padding: 40px;
+        text-align: center;
+        border-radius: 20px;
+        border-top: 6px solid #38bce8;
+
+        box-shadow: 0 5px 20px rgba(0, 70, 120, 0.15);
+    }
+
+    .team-icon {
+        font-size: 45px;
+    }
+
+    .team h3 {
+        color: #07579e;
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    /* Galleria */
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .gallery-box-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-box {
+        height: 200px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #c8efff;
+        border-radius: 20px;
+
+        font-size: 50px;
+    }
+
+    /* Yhteystiedot */
+
+    .contact {
+        text-align: center;
+    }
+
+    .contact-box {
+        max-width: 550px;
+        margin: auto;
+
+        background: white;
+        padding: 30px;
+
+        border-radius: 20px;
+
+        box-shadow: 0 5px 20px rgba(0, 70, 120, 0.15);
+    }
+
+    .contact-box p {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    /* Alapalkki */
+
+    footer {
+        background: #07579e;
+        color: white;
+    }
+
+    /* Puhelin */
+
+    @media (max-width: 700px) {
+
+        header {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .cards,
+        .teams,
+        .gallery {
+            grid-template-columns: 1fr;
+        }
+    }
